@@ -15,7 +15,7 @@ func myMain() -> String
     
     var tempClient = TileClient()
     
-    //tempClient.onBoard[4][4] = "T"
+    tempClient.onBoard[4][4] = "T"
     tempClient.onBoard[4][5] = "H"
     tempClient.onBoard[4][6] = "I"
     tempClient.onBoard[4][7] = "S"
