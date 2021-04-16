@@ -29,6 +29,8 @@ func myMain() -> String
     tempClient.onBoard[9][7] = "W"
     //tempClient.onBoard[10][7] = "X"
     
+    print("Sup sir");
+    
     return String(tempClient.callSplit())
 }
 
