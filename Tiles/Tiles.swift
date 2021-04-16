@@ -25,7 +25,7 @@ func myMain() -> String
     tempClient.onBoard[7][5] = "E"
     tempClient.onBoard[7][6] = "L"
     tempClient.onBoard[7][7] = "L"
-    tempClient.onBoard[8][7] = "O"
+    //tempClient.onBoard[8][7] = "O"
     //tempClient.onBoard[9][7] = "W"
     tempClient.onBoard[10][7] = "X"
     
