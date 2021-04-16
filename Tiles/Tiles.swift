@@ -31,6 +31,8 @@ func myMain() -> String
     
     print("Hello world");
     
+    print("Rushil");
+    
     print("Sup sir");
     
     return String(tempClient.callSplit())
