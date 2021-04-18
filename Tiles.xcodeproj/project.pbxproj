@@ -19,8 +19,8 @@
 		0B50FBD725F02D6B005785F0 /* ClientTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50FBD625F02D6B005785F0 /* ClientTiles.swift */; };
 		0B50FBDC25F02D7E005785F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50FBDB25F02D7E005785F0 /* ContentView.swift */; };
 		0B50FBE125F02DA7005785F0 /* ServerTiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50FBE025F02DA7005785F0 /* ServerTiles.swift */; };
-		0B50FBE625F02DB7005785F0 /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50FBE525F02DB7005785F0 /* Tiles.swift */; };
 		0B50FBEB25F02DC8005785F0 /* TilesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50FBEA25F02DC8005785F0 /* TilesApp.swift */; };
+		3FC4AF0D262BB37C00BC45B3 /* Tiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B50FBE525F02DB7005785F0 /* Tiles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -276,9 +276,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0B50FBE625F02DB7005785F0 /* Tiles.swift in Sources */,
 				0B50FBD725F02D6B005785F0 /* ClientTiles.swift in Sources */,
 				0B50FBDC25F02D7E005785F0 /* ContentView.swift in Sources */,
+				3FC4AF0D262BB37C00BC45B3 /* Tiles.swift in Sources */,
 				0B50FBEB25F02DC8005785F0 /* TilesApp.swift in Sources */,
 				0B50FBE125F02DA7005785F0 /* ServerTiles.swift in Sources */,
 				0B50FBA825F02C6F005785F0 /* ViewController.swift in Sources */,

@@ -2,11 +2,13 @@
 //  ClientTiles.swift
 //  Tiles
 //
-//  Created by Michael Yuzhou Fu on 3/3/21.
+//  Created by Michael Yuzhou Fu and Rushil Shah on 3/3/21.
 //
 
 import UIKit
 import Foundation
+
+
 class TileClient
 {
     var inHand = [String]()
@@ -177,12 +179,11 @@ class TileClient
             let checker = UITextChecker()
             let range = NSRange(location: 0, length: word.utf16.count)
             let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
-            print(word + String(misspelledRange.location == NSNotFound))
+            // print(word + String(misspelledRange.location == NSNotFound))
 
             return misspelledRange.location == NSNotFound
         }
         
-        //let dictionary = ["THIS", "is", "a", "dictionary", "representaion", "TEST", "TELL", "LOW"]
         for word in filtered
         {
             if (word.count == 2)

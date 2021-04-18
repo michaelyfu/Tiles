@@ -2,7 +2,7 @@
 //  ServerTiles.swift
 //  Tiles
 //
-//  Created by Michael Yuzhou Fu on 3/3/21.
+//  Created by Michael Yuzhou Fu and Rushil Shah on 3/3/21.
 //
 
 import Foundation
@@ -23,20 +23,13 @@ class TileServer
         self.joinCode = "ABCDEFGH"
     }
 
-    func startServer()
-    {
-    }
-
-    func stopServer()
-    {
-    }
 
     func processDrop(_ requestingClient: String, _ droppedLetter: String)
     {
         self.tilesArray.append(droppedLetter)
         self.tilesArray.shuffle()
         let result = Array(self.tilesArray.dropFirst(3))
-        self.send(requestingClient, result.joined())
+        // self.send(requestingClient, result.joined())
     }
     
     func processSplit(_ requestingClient: String)
@@ -45,11 +38,11 @@ class TileServer
         {
             for client in clientsArray
             {
-                send(client, requestingClient)
+                // send(client, requestingClient)
             }
         }
         let requestingClientTile = self.tilesArray.dropFirst(1)
-        send(requestingClient, requestingClientTile.joined())
+        // send(requestingClient, requestingClientTile.joined())
         
         for client in self.clientsArray
         {
@@ -60,28 +53,16 @@ class TileServer
             let tile = self.tilesArray.dropFirst(1)
             if tile.count != 0
             {
-                send(client, tile.joined())
+                // send(client, tile.joined())
             }
         }
-    }
-
-    func send(_ client: String, _ message: String)
-    {
     }
 
     func createTiles()
     {
         let tilesCount = [13, 3, 3, 6, 18, 3, 4, 3, 12, 2, 2, 5, 3, 8, 11, 3, 2, 9, 6, 9, 6, 3, 3, 2, 3, 2]
         
-        //e—18
-        //t-9
-        //o-11
-        //a-13
-        //n-8
-        //i-12
-        
-        
-        for (index, count) in tilesCount.enumerated() //returns index along w value
+        for (index, count) in tilesCount.enumerated()
         {
             self.tilesArray.append(contentsOf: repeatElement(String(UnicodeScalar(index + 97)!),count: count))
         }
@@ -113,7 +94,7 @@ class TileServer
         }
         for (client, tiles) in zip(clientsArray, tilesPerPlayer)
         {
-            self.send(client, tiles.joined())
+            // self.send(client, tiles.joined())
         }
     }
 }
